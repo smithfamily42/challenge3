@@ -15,11 +15,14 @@ function writePassword() {
   passwordText.value = password;
 
 }
-//testing the generatePassword function with test
+
+//function that creates the password
 function generatePassword (pwLength, char) {
+  //empty variable to later store the password
   var pwd = '';
+
+
   // asking for length of password
-  
   var pwLength = (prompt("How long should the password be? Choose at least 8 characters but no more than 128 characters."));
   while (pwLength < 8 || pwLength > 128) {
     alert("Please choose a number greater than 7 but less than 129.");
@@ -27,7 +30,8 @@ function generatePassword (pwLength, char) {
   }
   //show the number of characters choosen to the user
   alert("Your password will have " + pwLength + " characters");
-  
+
+//choose the type of characters used in the password
   var upperConfirm = confirm("Do you want to use upper case letters?");
   var lowerConfirm = confirm("Do you want to use lower case letters?");
   var specConfirm = confirm("Do you want special characters?");
