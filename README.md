@@ -8,3 +8,5 @@ Creating a javascript application that generates a password of length from 8 to 
 The user must be able to chose character types are lowercase, uppercase, number, and special character. The number of characters and type of characters must be validated. At least one character type is choosen. 
 
 While loops used for validation and the character types are consolidated into a single variable for iteration in the for loop and Math.random method
+
+![](2021-04-08-22-48-19.png)
