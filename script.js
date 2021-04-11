@@ -52,10 +52,19 @@ while(!upperConfirm && !lowerConfirm && !specConfirm && !numConfirm) {
   console.log(pwLength);
 
   //need to include all the character types into one variable
+
+  if (lowerConfirm){
 var char = lower;
+  }
+  if (numConfirm){
     char += num;
+  }
+  if (upperConfirm){
     char += upper;
+  }
+  if (specConfirm) {
     char += specChar;
+  }
   
   for (var i = 0; i < pwLength; i++) {
       pwd += char[Math.floor(Math.random() * char.length)];
