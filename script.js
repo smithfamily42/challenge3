@@ -52,9 +52,9 @@ while(!upperConfirm && !lowerConfirm && !specConfirm && !numConfirm) {
   console.log(pwLength);
 
   //need to include all the character types into one variable
-
+var char = '';
   if (lowerConfirm){
-var char = lower;
+  char += lower;
   }
   if (numConfirm){
     char += num;
